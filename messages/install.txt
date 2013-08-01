@@ -1,0 +1,31 @@
+SCRIBE: ITERATOR
+================
+
+Description:
+	This package provides a simple means of replacing multiple
+	selected regions with an iterated number value, based on
+	the settings defined.
+
+Usage: 
+	- Use the default Find functionality to search for the multiple
+	  occurances you would like to replace with an iterated value.
+	- Use the "Find All" option of the search bar so that all 
+	  occurances are selected.
+	- Use the keyboard shortcut "Ctrl+Alt+N" or the top-level
+	  menu item "Scribe Inc." > "Number Iterator" to bring up the
+	  iterator prompt
+	- You will be greeted with a prompt at the bottom of the Sublime
+	  window with three digits, as such "1 1 1"
+	- The first digit is the starting number, the second digit is
+	  iteration step size, and the final digit is any padding.
+
+Example:
+	- Replace "1 1 1" with the values "5, 10, 3" to iterate beginning
+	  at five, increasing by ten digits on each iteration, and 
+	  applying a padding of 3 characters.
+	- The above example would output the following replacements:
+		005
+		015
+		025
+		035
+	  etc...
