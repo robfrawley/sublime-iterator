@@ -1,6 +1,6 @@
 [
     {
-        "caption": "Insert Numbers",
-        "command": "prompt_insert_nums"
+        "caption": "Number Iterator",
+        "command": "prompt_number_iterator"
     }
 ]

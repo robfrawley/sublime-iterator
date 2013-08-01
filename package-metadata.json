@@ -1,5 +1,1 @@
-{
-	"url": "https://github.com/scribenet/sublime-iterator", 
-	"version": "0.1.0", 
-	"description": "Generate and insert an iterative number into Sublime Text 2.\r\n\r\nDefault binding: CTRL + ALT+ N."
-}
+{"url": "https://github.com/scribenet/sublime-iterator", "version": "0.1.0", "description": "A simplistic number iterator; goodbye TextPad"}

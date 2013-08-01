@@ -1,6 +1,7 @@
-import sublime, sublime_plugin
+import sublime
+import sublime_plugin
 
-class PromptInsertNumsCommand(sublime_plugin.WindowCommand):
+class PromptNumberIteratorCommand(sublime_plugin.WindowCommand):
 
     def run(self):
         self.window.show_input_panel('Enter a starting number, step, and padded width', '1 1 1', self.on_done, None, None)
@@ -10,11 +11,11 @@ class PromptInsertNumsCommand(sublime_plugin.WindowCommand):
         try:
             (current, step, padding) = map(str, text.split(" "))
             if self.window.active_view():
-                self.window.active_view().run_command("insert_nums", {"current" : current, "step" : step, "padding" : padding} )
+                self.window.active_view().run_command("number_iterator", {"current" : current, "step" : step, "padding" : padding} )
         except ValueError:
             pass
 
-class InsertNumsCommand(sublime_plugin.TextCommand):
+class NumberIteratorCommand(sublime_plugin.TextCommand):
 
     def run(self, edit, current, step, padding):
         current = int(current)

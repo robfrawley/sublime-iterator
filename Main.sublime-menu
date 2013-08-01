@@ -1,12 +1,13 @@
 [
     {
-        "id": "tools",
+        "caption": "Scribe Inc.",
+	"id": "scribe",
         "children":
         [
             {
-                "caption": "Insert Numbers",
+                "caption": "Number Iterator",
                 "mnemonic": "N",
-                "command": "prompt_insert_nums"
+                "command": "prompt_number_iterator"
             }
         ]
     }
