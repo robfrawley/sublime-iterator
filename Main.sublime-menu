@@ -1,13 +1,20 @@
 [
     {
         "caption": "Scribe Inc.",
-	"id": "scribe",
+	    "id": "scribe",
         "children":
         [
             {
-                "caption": "Number Iterator",
-                "mnemonic": "N",
-                "command": "prompt_number_iterator"
+                "caption": "Utilities",
+                "mnemonic": "U",
+                "id": "scribe_utilities",
+                "children": [
+                    {
+                        "caption": "Number Iterator",
+                        "mnemonic": "N",
+                        "command": "prompt_number_iterator"
+                    }
+                ]
             }
         ]
     }
